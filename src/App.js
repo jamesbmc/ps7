@@ -38,12 +38,12 @@ class Main extends Component {
                 <Route exact path='/' render={(routerProps) => (
                         <HomePage {...routerProps} likes={this.props.likes} />
                     )}
-                    />
+                />
                 <Route exact path='/contact' component={ContactPage} />
                 <Route exact path='/projects' render={(routerProps) => (
                         <ProjectPage {...routerProps} projects={this.props.projects} />
                     )}
-                    />
+                />
             </Switch>
         );
     }
